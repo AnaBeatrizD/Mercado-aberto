@@ -1,33 +1,68 @@
-// import 'package:flutter/material.dart';
 
-// class CaixaCep extends StatefulWidget {
-//   const CaixaCep({Key? key}) : super(key: key);
+// import 'package:flutter/material.dart';
+// import 'package:via_cep_flutter/via_cep_flutter.dart';
+
+// class formularioCep extends StatefulWidget {
+//   const formularioCep({ Key? key }) : super(key: key);
 
 //   @override
-//   State<CaixaCep> createState() => _CaixaCepState();
+//   _formularioCepState createState() => _formularioCepState();
 // }
 
-// class _CaixaCepState extends State<CaixaCep> {
+// class _formularioCepState extends State<formularioCep> {
+//   final _Cepcontroller = TextEditingController();
+  
 //   @override
 //   Widget build(BuildContext context) {
-//     return Container(
-//       child: showDialog(
-//       context: context,
-//       builder: (BuildContext context) {
-//         // retorna um objeto do tipo Dialog
-//         return AlertDialog(
-//           title: new Text("Alert Dialog titulo"),
-//           content: new Text("Alert Dialog body"),
+//     // TODO: implement build
+  
+//     return AlertDialog(
+//   title: new Text("Digite seu CEP:"),
+//           content: TextFormField(
+//             maxLength: 9,
+//     decoration: const InputDecoration(
+//     icon: Icon(Icons.person),
+//     hintText: 'Digite...',
+//     labelText: 'CEP *',
+//   ),
+//   onSaved: (String? value) {
+//     // This optional block of code can be used to run
+//     // code when the user saves the form.
+//   },
+//   validator: (String? value) {
+//     return (value != null && value.contains('@')) ? 'Do not use the @ char.' : null;
+//   },
+// ),
 //           actions: <Widget>[
-//             // define os botões na base do dialogo
+
 //             new FlatButton(
-//               child: new Text("Fechar"),
+//               child: new Text("Cancelar"),
+//               onPressed: () {
+//                 Navigator.of(context).pop();
+//               },
+//             ),
+//             new FlatButton(
+//               child: new Text("Enviar"),
 //               onPressed: () {
 //                 Navigator.of(context).pop();
 //               },
 //             ),
 //           ],
-//         ),
+//         );
+//       },
 //     );
+//                 },
+//                 child: Text("Enviar para $text")),
+
+
+
+
+
+//     );
+
 //   }
+  
+  
+    
+  
 // }
